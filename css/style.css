@@ -23,7 +23,7 @@ h2 {
 .permonth {
   color: hsl(199, 80%, 75%);
 }
-a {
+.button {
     display: block;
     margin-top: 35px;
     margin-left: auto;
@@ -45,7 +45,8 @@ a:hover {
   grid-template-columns: repeat(2,50%);
   grid-template-areas:
   "h h"
-  "l r";
+  "l r"
+  "f f";
   margin: auto;
 }
 .header {
@@ -75,6 +76,10 @@ a:hover {
   margin-bottom: 25px;
 }
 
+.footer {
+  grid-area: f;
+}
+
 @media screen  and (max-width: 600px)
 {
   .wrapper {
@@ -82,6 +87,7 @@ a:hover {
     grid-template-areas:
     "h"
     "l"
-    "r";
+    "r"
+    "f";
   }
 }
