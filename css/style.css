@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+body,html {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  height: 100%;
+}
+p {
+  font-size: 16px;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+h2 {
+  margin: 0px;
+  font-weight: 700;
+}
+.dollar {
+  font-size: 32px;
+  font-weight: 700;
+  vertical-align: sub;
+}
+.permonth {
+  color: hsl(199, 80%, 75%);
+}
+a {
+    display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    background: hsl(71, 73%, 54%);
+    padding: 17px 25px;
+    width: 70%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    color: hsl(204, 43%, 93%);
+}
+a:hover {
+  background:  #ffad33;
+}
+.wrapper {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas:
+  "h h"
+  "l r";
+  margin: auto;
+}
+.header {
+  grid-area: h;
+  color: hsl(218, 22%, 67%);
+  padding: 5%;
+}
+.header h2 {
+  color: hsl(71, 73%, 54%);
+}
+.left {
+  grid-area: l;
+  background: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  padding: 10%;
+}
+.right {
+  grid-area: r;
+  background: hsl(179, 80%, 45%);
+  color: hsl(204, 43%, 93%);
+  padding: 10%;
+}
+.right p {
+  margin: 5px 0px 0px 5px;
+}
+.right h2 {
+  margin-bottom: 25px;
+}
+
+@media screen  and (max-width: 600px)
+{
+  .wrapper {
+    grid-template-columns: repeat(1,minmax(300px,auto));
+    grid-template-areas:
+    "h"
+    "l"
+    "r";
+  }
+}
